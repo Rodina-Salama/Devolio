@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  start navbar  */
+
+.navbar-brand {
+   font-size: 24px;
+}
+.nav-link , .nav-links {
+   font-size: 18px;
+   color: white;
+   text-decoration: none;
+}
+
+
+
+.nav-link{
+position: relative;
+padding: 0 10px;
+}
+
+.nav-link::after{
+   content: '';
+position: absolute;
+background-color: white;
+height: 2px;
+width: 0;
+left: 0;
+bottom: -3px;
+transition: 0.3s;
+}
+.nav-link:hover:after{
+   width: 100%;
+}
+.navbar-nav .nav-link.active{
+   border-bottom: 2px white solid;
+   transition: 1s;
+}
+
+/* .nav-link:hover{
+
+   border-bottom: 2px white solid;
+   
+
+}
+
+.navbar-nav .nav-link.active{
+   border-bottom: 2px white solid;
+   
+} */
+
+/* end navbar */
+
+/* start home  */
+
+#home{
+   height: 100vh;
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+}
+#home .container{
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    position: relative;
+}
+#home .container .text{
+   
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    max-width: 800px;
+  
+  
+}
+#home .container .text h1{
+    
+    color: white;
+    font-size: 4.5rem;
+}
+#home .container .text h2{
+    color: white;
+    font-size: 2.5rem;
+   
+    position: relative;
+    
+
+}
+#home .container .text h2::before{
+    content: '';
+    animation: word 8s infinite;
+
+}
+#home .container .text h2::after{
+    content: '';
+    border-left:solid white 2px ;
+    position: absolute;
+    height: 100%;
+    animation: cursor 0.8s infinite;
+}
+
+@keyframes cursor {
+    to{
+      border-left:solid rgb(91, 90, 90) 2px;
+    
+    }
+}
+@keyframes word {
+    0%{
+    content: 'Phot';
+    }
+    5%{
+     content: 'Photogr';
+     }    
+    10%{
+     content: 'Photograp';
+     } 
+     
+     15%{
+         content: 'Photographer';
+         }    
+     17%{
+        content: 'Photogr';
+        }  
+        20%{
+     content: 'Photo';
+            } 
+    22%{
+      content: 'Ph';
+            } 
+       25%{
+          content: '';
+         } 
+     0%{
+    content: 'Phot';
+    }
+    5%{
+     content: 'Photogr';
+     }    
+    10%{
+     content: 'Photograp';
+     } 
+     
+     15%{
+         content: 'Photographer';
+         }    
+     17%{
+        content: 'Photogr';
+        }  
+        20%{
+     content: 'Photo';
+            } 
+    22%{
+      content: 'Ph';
+            } 
+       25%{
+          content: '';
+         }
+         
+         
+         27%{
+            content: 'De';
+            }
+            30%{
+             content: 'Desi';
+             }    
+            35%{
+             content: 'Design';
+             } 
+             
+             37%{
+                 content: 'Designer';
+                 }    
+             40%{
+                content: 'Design';
+                }  
+                45%{
+             content: 'Desi';
+                    } 
+            47%{
+              content: 'De';
+                    } 
+               50%{
+                  content: '';
+                 } 
+                 52%{
+                    content: 'Deve';
+                 }  
+                 55%{
+                    content: 'Develo';
+                 }  
+                 57%{
+                    content: 'Develop';
+                 }  
+                 60%{
+                    content: 'Develope';
+                 }  
+                 62%{
+                    content: 'Developer';
+                 }  
+                 65%{
+                    content: 'Develop';
+                 }  
+                 67%{
+                    content: 'Devel';
+                 }  
+                 70%{
+                    content: 'Dev';
+                 }  
+                 72%{
+                    content: 'D';
+                 }  
+                 75%{
+                    content: '';
+                 }  
+                 77%{
+                    content: 'Fr';
+                 }
+                 80%{
+                    content: 'Free';
+                 }
+                 83%{
+                    content: 'Freela';
+                 }
+                 85%{
+                    content: 'Freelanc';
+                 }
+                 87%{
+                    content: 'Freelancer';
+                 }
+                 90%{
+                    content: 'Freelan';
+                 }
+                 92%{
+                    content: 'Freel';
+                 }
+                 95%{
+                    content: 'Fre';
+                 }
+                 97%{
+                    content: 'F';
+                 }
+                 100%{
+                    content: 'F';
+                 }
+                              
+    
+    
+    }
+    /*  start about section */
+
+ #about{
+      min-height: 100vh;
+      padding: 40px;
+    }
+#about .container{
+   background-color: rgb(249, 249, 248);
+   box-shadow: 2px 2px 5px #aaaaaa;
+  
+}
+
+#about .container .col-lg-4 figcaption span{
+      font-weight: 500;
+      font-size: 18px;
+      color: black;
+    }
+#about .container .col-lg-4 figcaption p{
+   color: dimgray;
+}
+#about .container .col-md-5 .line{
+   border-bottom: 4px rgb(87, 176, 244) solid;
+   width: 100px;
+   margin-bottom: 30px;
+
+}
+/*  end about section */
+/* start services section */
+#services {
+   min-height: 135vh;
+}
+#services .container header .line{
+   border-bottom: 4px rgb(29, 134, 215) solid;
+   width: 100px;
+   margin: auto;
+}
+
+#services .container .service-icon .fa-solid{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%; 
+ border: rgb(37, 137, 237) 10px solid;
+}
+#services .container .row .col-lg-4{
+   border: 10px solid;
+  
+}
+#services .container .service-icon .fa-solid:hover {
+   background-color: rgb(37, 137, 237);
+   color: white;
+   border: rgba(154, 156, 157, 0.44) 10px solid;
+}
+/* end  services section */
+#section{
+   min-height: 40vh;
+   background-image: url(../images/counters-bg.jpg);
+   background-attachment: fixed;
+
+}
+#section .container-fluid{
+  background: #0077ffd2;
+  position: relative;
+ padding: 50px;
+
+  
+}
+@media screen and (min-width: 601px) {
+   #section .container-fluid {
+    height: 40vh;
+   }
+ }
+#section  .container-fluid .row .col-md-3{
+   text-align: center;
+   color: white;
+   padding-top: 60px;
+}
+#section .container-fluid .row .col-md-3 .fa-solid{
+   border: white 8px solid;
+   border-radius: 50%;
+   padding: 20px;
+  
+}
+/* end section */
+/* start work section */
+#work{
+   min-height: 130vh;
+}
+#work .container .line{
+   border-bottom: 4px rgb(29, 134, 215) solid;
+   width: 100px;
+   margin: auto;
+}
+#work .container .row .item .text{
+   position: relative;
+}
+#work .container .row .item .text .fa-solid{
+   position: absolute;
+   left: 87%;
+   top: 40%;
+
+   color: dodgerblue;
+   border: dodgerblue solid 3px;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+}
+#work .container .row .col-lg-4 .item{
+   overflow: hidden;
+}
+#work .container .row .col-lg-4 .item:hover img{
+   transform: scale(1.2);
+}
+/* end work section */
+/* start slider section */
+#slider{
+  min-height: 70vh;
+  margin-top: 40px;
+   background-image: url(../images/overlay-bg.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   position: relative;
+}
+#slider .container-fluid{
+   background: #0077ffa4;
+position: absolute;
+height: 100%;
+ 
+}
+#slider .container-fluid .carousel-item .photo{
+   width: 150px;
+   height: 150px;
+   
+  
+}
+.carousel-indicators [data-bs-target] {
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+ 
+}
+/* end slider section */
+
+/* start blog section  */
+#blog{
+   min-height: 110vh;
+}
+#blog .container header .line{
+   border-bottom: 4px rgb(87, 176, 244) solid;
+   width: 100px;
+   margin-bottom: 30px;
+}
+#blog .container .row .col-md-4{
+   position: relative;
+}
+#blog .container .row .col-md-4 .word{
+  /* position: absolute;
+  top: 58%; 
+  left: 40%; */
+  background-color: dodgerblue;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 150px;
+  margin: auto;
+}
+#blog .container .row .col-md-4 .last .photo{
+   width: 50px;
+   height: 50px;
+}
+#blog .container .row .col-md-4 .photo-1{
+   border: 1px grey solid;
+   /* border-radius: 4%; */
+ 
+}
+#blog .container .row .col-md-4 .text{
+   border: 1px rgb(173, 170, 170) solid;
+}
+#blog .container .row .col-md-4 .last{
+   border: 1px rgb(173, 170, 170) solid;
+   /* border-radius: 4%; */
+   background-color: #f5f5f5;
+   position: relative;
+   padding: 3px;
+  margin-bottom: 10px;
+}
+#blog .container .row .col-md-4 .last .time{
+   position: absolute;
+right: 8px;
+bottom: -5px;
+}
+
+/* end blog section  */
+/* start contact section */
+#contact{
+ min-height: 70vh;
+   background-image: url(../images/overlay-bg.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   
+ 
+}
+#contact .container-fluid{
+   background-color: rgba(30, 143, 255, 0.614);
+   height: 100%;
+   width: 100%;
+  
+   padding-top: 40px;
+   padding-bottom: 40px;
+
+
+
+}
+@media screen and (min-width: 601px) {
+   #contact .container-fluid {
+    height: 70vh;
+   }
+ }
+
+#contact .container-fluid .container .row input{
+   width: 100%;
+  height: 40px;
+  padding-left:5px ;
+  background: #fefbfb;
+  border: 1px solid grey;
+}
+
+#contact .container-fluid  .container .row textarea{
+   background: #fefbfb;
+  border: 1px solid grey;
+  padding-left: 5px;
+}
+
+#contact .container-fluid  .container .row button {
+   border-top: 1px solid #126396;
+   background: #3693d1;
+   background: linear-gradient( #1e20a6, #3693d1);
+   padding: 15px 30px;
+   -webkit-border-radius: 24px;
+   -moz-border-radius: 24px;
+   border-radius: 24px;
+   color: white;
+   font-size: 17px;
+   vertical-align: middle;
+   margin: 20px;
+  
+   }
+   #contact .container-fluid .container .row button:hover {
+   background: #1683cb;
+
+   }
+   #contact .container-fluid .container .row .icons .fa-brands{
+      border: solid rgb(32, 157, 225) 3px;
+      
+   }
+   #contact .container-fluid .container .row .icons .fa-brands:hover {
+    background-color: rgb(32, 157, 225);
+    border: 2px solid rgba(128, 128, 128, 0.268);
+    color: white;
+    cursor: pointer;
+   }
+
+#contact .lines{
+   border-bottom: 4px rgb(87, 176, 244) solid;
+   width: 100px;
+  text-align: start;
+}
+
+
+
+/* end contact section */
+/* last section */
